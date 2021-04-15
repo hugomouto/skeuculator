@@ -8,6 +8,10 @@ const onScreenOp = document.getElementById('calc-on-screen')
 //// Type Numbers and Functions
 calcNumButtons.addEventListener ('click', function(event) {
   let keyEntry = event.target.innerText;
+  if (event.target.innerText === '=') {
+    calculateOperation();
+    return;
+  }
   if (onScreenOp.innerHTML === '0') {
     onScreenOp.innerHTML = '';
     onScreenOp.innerHTML = keyEntry;
@@ -34,3 +38,9 @@ calcOpButtons.addEventListener ('click', function(event) {
     break;
   }
 })
+
+//// Calculate operation
+function calculateOperation() {
+  let operationResult = eval(onScreenOp.innerHTML);
+  onScreenOp.innerHTML = operationResult;
+}

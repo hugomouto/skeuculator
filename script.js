@@ -6,5 +6,10 @@ const onScreenOp = document.getElementById('calc-on-screen')
 //// Type buttons
 calcButtons.addEventListener ('click', function(event) {
   let keyEntry = event.target.innerText;
-  onScreenOp.innerHTML = onScreenOp.innerHTML + keyEntry;
+  if (onScreenOp.innerHTML === '0') {
+    onScreenOp.innerHTML = '';
+    onScreenOp.innerHTML = keyEntry;
+  } else {
+    onScreenOp.innerHTML = onScreenOp.innerHTML + keyEntry;
+  }
 })

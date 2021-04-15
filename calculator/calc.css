@@ -40,6 +40,7 @@ html {
 #calc-screen {
   height: 100%;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 #calc-screen p {
@@ -52,16 +53,16 @@ html {
   margin-bottom: 15px!important;
 }
 
-.calc-on-screen {
+#calc-on-screen {
   font-size: 36px;
   font-weight: 700;
 }
 
-.calc-operation, .calc-past-result {
+#calc-operation, #calc-past-result {
   color: #90a4ae;
 }
 
-.calc-past-result {
+#calc-past-result {
   font-weight: 900;
 }
 

@@ -39,22 +39,19 @@ html {
 
 #calc-screen {
   height: 100%;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 #calc-screen p {
   text-align: right;
-  padding: 0 15px 15px;
   margin:0;
 }
 
-#calc-screen p:last-child {
-  margin-bottom: 15px!important;
-}
-
 #calc-on-screen {
-  font-size: 36px;
+  font-size: 60px;
+  text-align: center!important;
   font-weight: 700;
 }
 
@@ -154,4 +151,8 @@ html {
     margin: 0;
     border-radius: 0;
   }
+}
+
+/* --- JS Classes --- */
+.result {
 }
